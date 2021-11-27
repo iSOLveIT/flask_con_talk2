@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <!-- Contact Me -->
+    <section class="BEDLA-page-section">
+        <div class="container">
+            <div class="col-md-8 offset-md-2">
+                <div class="BEDLA-page-content text-center">
+                    <h2>Contact</h2>
+                    <p>Please reach out to me with your inquiry!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="BEDLA-contact-section">
+        <div class="container">
+            <div class="row BEDLA-contact-wrap">
+                <div class="col-md-6 xs-padding">
+                    <div class="BEDLA-contact-info">
+                        <h3>Get in touch</h3>
+                        <p>Nunc ultrices odio mauris fermentum, gravida varius dranex the celacinia. Proin dictum nisleu scelerisque risus feugiat the amet. Vestibulum con dimentum sem non dui tempoeu.</p>
+                        <ul>
+                            <li>
+                                <i class="ti-location-pin"></i>
+                                101 East San Fernando St., San Jose, CA 95112</li>
+                            <li>
+                                <i class="ti-mobile"></i>
+                                +1 800 123 1238</li>
+                            <li>
+                                <i class="ti-email"></i>
+                                hi@BEDLAMua.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 xs-padding">
+                    <div class="BEDLA-contact-form">
+                        <h3>Contact Form</h3>
+                        <form action="#" method="post" class="form-horizontal">
+                            <div class="form-group colum-row row">
+                                <div class="col-sm-6">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group colum-row row">
+                                <div class="col-md-12">
+                                    <select name="service" id="service" class="form-control" required>
+                                        <option value="" disabled selected>Service of interest</option>
+                                        <option value="service_1">Service 1</option>
+                                        <option value="service_2">Service 2</option>
+                                        <option value="service_3">Service 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Enter your message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <button class="BEDLA-btn2" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

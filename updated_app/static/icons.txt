@@ -1,0 +1,101 @@
+
+FA-icons
+
+fa-facebook
+fa-whatsapp
+fa-instagram
+fa-quote-left
+fa-reply
+fa-twitter
+
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-whatsapp:before {
+    content: "\f232"
+}
+
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+.fa-quote-left:before {
+    content: "\f10d"
+}
+
+.fa-reply:before {
+    content: "\f112"
+}
+
+.fa-twitter:before {
+    content: "\f099"
+}
+
+
+TI icons
+
+ti-time
+ti-user
+ti-shift-right-alt
+ti-arrow-left
+ti-arrow-right
+ti-location-pin
+ti-mobile
+ti-email
+ti-facebook
+ti-twitter
+ti-instagram
+ti-linkedin
+
+
+.ti-time:before {
+    content: "\e72b"
+}
+
+.ti-user:before {
+    content: "\e602"
+}
+
+.ti-shift-right-alt:before {
+    content: "\e6d9"
+}
+
+.ti-arrow-right:before {
+    content: "\e628"
+}
+
+.ti-arrow-left:before {
+    content: "\e629"
+}
+
+.ti-location-pin:before {
+    content: "\e693"
+}
+
+.ti-mobile:before {
+    content: "\e621"
+}
+
+.ti-email:before {
+    content: "\e75a"
+}
+
+.ti-facebook:before {
+    content: "\e741"
+}
+
+.ti-instagram:before {
+    content: "\e73d"
+}
+
+.ti-twitter-alt:before {
+    content: "\e74b"
+}
+
+.ti-linkedin:before {
+    content: "\e735"
+}
+

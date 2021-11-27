@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block css_sheets %}
+    <link href="{{ url_for('static', filename='css/venobox/venobox.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+    <!-- Portfolio -->
+    <section class="bedla-portfolio-page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="BEDLA-blog-items BEDLA-single-post">
+                        <div class="entry-thumb">
+                            <img src="../static/img/blog/post.jpg" alt="blog post">
+                        </div>
+                        <div class="BEDLA-page-content mb-20">
+                            <h2>Portfolio</h2>
+                        </div>
+                        <p>Nullam blandit augue nec ex venenatis accumsan. Suspendisse orci leo, faucibus sit amet velit sit amet, tristique semper magna. Nulla sit amet finibus dolor. Praesent et euismod odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Nullam tempor, est vitae hendrerit hendrerit, lacus purus viverra ex, in consequat sapien ligula vulputate nisi. Nulla lobortis sapien nec felis finibus, at suscipit lacus porta. Fusce ut ultrices libero. In accumsan porta neque ut semper. Vivamus pretium ultrices risus quis suscipit. In vehicula arcu sit amet velit varius, in molestie mi dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Nullam blandit augue nec ex venenatis accumsan. Suspendisse orci leo, faucibus sit amet velit sit amet, tristique semper magna. Nulla sit amet finibus dolor. Praesent et euismod odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row bedla-portfolio-gallery-section">
+                <div class="col-md-12 text-center">
+                    <h2>Portfolio Photos</h2>
+                    <ul class="gallery-filter align-center mb-40">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".hair" class="">Hair Makeup</li>
+                        <li data-filter=".wedding" class="">Face Makeup</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row gallery-items" style="position: relative; height: 1469.41px;">
+                <div class="col-md-6 single-item hair">
+                    <div class="gallery-wrap">
+                        <a href="../static/img/portfolio/p-02.jpg" class="gallery-link img-popup vbox-item" data-gall="galleryimg">
+                            <img src="../static/img/portfolio/p-02.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 single-item wedding">
+                    <div class="gallery-wrap">
+                        <a href="../static/img/portfolio/p-01.jpg" class="gallery-link img-popup vbox-item" data-gall="galleryimg">
+                            <img src="../static/img/portfolio/p-01.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 single-item hair">
+                    <div class="gallery-wrap">
+                        <a href="../static/img/portfolio/p-04.jpg" class="gallery-link img-popup vbox-item" data-gall="galleryimg">
+                            <img src="../static/img/portfolio/p-04.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 single-item wedding">
+                    <div class="gallery-wrap">
+                        <a href="../static/img/portfolio/p-03.jpg" class="gallery-link img-popup vbox-item" data-gall="galleryimg">
+                            <img src="../static/img/portfolio/p-03.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>    
+{% endblock %}
+
+{% block js_scripts %}
+    <script src="{{ url_for('static', filename='js/vendor/venobox.min.js') }}"></script>
+    <script>
+        /* Venobox img-popup */
+        $('.img-popup').venobox({numeratio: true, infinigall: true});
+    </script>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]--><!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]--><!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]--><!--[if gt IE 8]><!-->
+    <html class="no-js" lang="en"><!--<![endif]--><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BEDLA Mua</title><link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='../static/img/favicon.png') }}"><link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><link href="{{ url_for('static', filename='css/themify-icons.min.css') }}" rel="stylesheet"><link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"><link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet"><link href="{{ url_for('static', filename='css/style.min.css') }}" rel="stylesheet"> {% block css_sheets %}{% endblock %}
+        </head>
+        <body>
+            <!-- Sidebar -->
+            {% include 'includes/navbar.html' %}<!-- Main --><div id="bedla-main"> {% block main %}{% endblock %}<!-- Footer --><footer class="bedla-footer-section text-center">
+                    <div class="container"><!-- Social Link --><div class="row">
+                            <div class="col-md-12 text-center mb-20">
+                                <div class="text-center">
+                                    <ul class="bedla-social-link">
+                                        <li>
+                                            <a href="/#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/#">
+                                                <i class="fa fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- Logo --><div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="brand"><img src="../static/img/logo-light.png" alt="BEDLA"></div>
+                            </div>
+                        </div><!-- Copyright --><div class="row">
+                            <div class="col-md-12">
+                                <p class="copright">2021 © BEDLA Mua. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div><!-- jQuery --><script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/vendor/owl.carousel.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/vendor/imagesloaded.pkgd.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/vendor/jquery.isotope.v3.0.2.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/scripts.min.js') }}"></script>
+            {% block js_scripts %}{% endblock %}
+        </body>
+    </html>
